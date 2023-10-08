@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import React from "react";
 
 const Welcome = () => {
   const date = new Date();
@@ -19,7 +18,15 @@ const Welcome = () => {
       </p>
 
       <p>
+        <Link to="/dash/notes/new">Add New techNote</Link>
+      </p>
+
+      <p>
         <Link to="/dash/users">View User Settings</Link>
+      </p>
+
+      <p>
+        <Link to="/dash/users/new">Add New User</Link>
       </p>
     </section>
   );
